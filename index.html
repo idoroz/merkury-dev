@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>WordToUrGramma</title>
+
+	<!-- Bootstrap Core CSS -->
+	<link rel="stylesheet" href="lib/css/font-awesome-4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="lib/css/bootstrap.min.css">
+	<link rel="stylesheet" href="lib/css/bootstrap-theme.min.css">
+	
+
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="main.css">
+
+</head>
+
+<body>
+
+<div id="wrapper">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="#"><img src="logo.png"> Merkury</a>
+                </li>
+                <li><a href="#"><span class="menuIcon"><i class="fa fa-home"></i></span>Home</a></li>
+                <li>
+                    <a href="#"><span class="menuIcon"><i class="fa fa-exchange"></i></span>Workflow</a>
+                </li>
+                <li>
+                    <a href="#"><span class="menuIcon"><i class="fa fa-line-chart"></i></span>Statistics</a>
+                </li>
+                <li>
+                    <a href="#"><span class="menuIcon"><i class="fa fa-calendar"></i></span>Calender</a>
+                </li>
+                <li>
+                    <a href="#"><span class="menuIcon"><i class="fa fa-cog"></i></span>Settings</a>
+                </li>
+                
+            
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        	<!-- Navigation -->
+	<nav class="topNavBar navbar navbar-default" role="navigation">
+		<a id="menu-toggle">
+			<!--Hamburger Icon -->
+			<div class="arrow-left"></div>
+			<div id="nav-icon1">
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+</a>
+<!--User Panel -->
+
+<div class="userPanel">
+<ul class="nav navbar-nav navbar-right">
+    
+     <li><img src="" class="searchIcon"><div class="search-bar"><input type="text" class="search-input" placeholder=" search..."></div>
+</li>
+
+    <li><a href="#"><img src="mail_icon.png" class="mailIcon"></a></li>
+        <li><a href="#"><img src="notification_bell.png" class="bellIcon"></a></li>
+        <li>
+            <div class="dropdown">
+          <a href="#"><img src="profile_pic.png" class="profilePicIcon">&nbsp</a>
+
+    <a href="#"><div class="arrow-down"></div></a>
+    <div class="dropdown-content">
+    <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+  </div>
+        </div>
+    </li>
+      </ul>
+
+
+
+
+</div>
+
+
+</nav>
+
+        <!-- Page Content -->
+
+        <div id="page-content-wrapper">
+           
+                
+
+ <div class="imgWrapper">
+    <ul class="imgList">
+        <li class='imgPost'><a target='_blank'><img src="two.jpg"><p class ='dataCaptionText'></p></a></li>
+          <li class='imgPost'><a target='_blank'><img src="three.jpg"><p class ='dataCaptionText'></p></a></li>
+            <li class='imgPost'><a target='_blank'><img src="one.jpg"><p class ='dataCaptionText'></p></a></li>
+             <li class='imgPost'><a target='_blank'><img src="two.jpg"><p class ='dataCaptionText'></p></a></li>
+          <li class='imgPost'><a target='_blank'><img src="three.jpg"><p class ='dataCaptionText'></p></a></li>
+            <li class='imgPost'><a target='_blank'><img src="one.jpg"><p class ='dataCaptionText'></p></a></li>
+
+         </ul>
+        </div>
+         
+   
+
+</div>
+</div>
+        <!-- /#page-content-wrapper -->
+
+    
+    <!-- /#wrapper -->
+		
+
+
+	<!-- Libraries -->
+	<script src="lib/js/jquery.min.js"></script>
+	<script src="lib/js/bootstrap.min.js"></script>
+	<script src="lib/js/marked.min.js"></script>
+
+
+	    <!-- Menu Toggle Script -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        console.log("hello");
+        $("#wrapper").toggleClass("toggled");
+    });
+
+     $(".dropdown").click(function(a){
+            a.stopPropagation();
+            $('.dropdown-content').toggleClass('dropdown-show');
+        });
+       $('html').not('#menu-toggle').click(function() {
+            $('.dropdown-content').removeClass('dropdown-show');
+        });
+        
+    
+    </script>
+	
+
+</body>
+</html>
